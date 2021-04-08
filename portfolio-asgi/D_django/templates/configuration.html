@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'conf.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/Nunito/Nunito-SemiBold.ttf' %}">
+    <title>{{ text }}</title>
+</head>
+<body>
+    <form action="/real_time_viewer/" method="POST">{% csrf_token %}
+    <div class="container">
+
+        <div class="container_1" id="container_1">
+            header
+        </div>
+        
+        <div class="container_2" id="container_2">
+            <h2 class="title">MODULE</h2> <h2 class="title">NEW NAME</h2> <h2 class="title">ENABLE</h2>
+            <h3>MODULE 01</h3> <input type="text" name="new_name01" class="in_new_name"> <input type="checkbox" name="state01" class="in_state">
+            <h3>MODULE 02</h3> <input type="text" name="new_name02" class="in_new_name"> <input type="checkbox" name="state02" class="in_state">
+            <h3>MODULE 03</h3> <input type="text" name="new_name03" class="in_new_name"> <input type="checkbox" name="state03" class="in_state">
+            <h3>MODULE 04</h3> <input type="text" name="new_name04" class="in_new_name"> <input type="checkbox" name="state04" class="in_state">
+            <h3>MODULE 05</h3> <input type="text" name="new_name05" class="in_new_name"> <input type="checkbox" name="state05" class="in_state">
+            <h3>MODULE 06</h3> <input type="text" name="new_name06" class="in_new_name"> <input type="checkbox" name="state06" class="in_state">
+            <h3>MODULE 07</h3> <input type="text" name="new_name07" class="in_new_name"> <input type="checkbox" name="state07" class="in_state">
+            <h3>MODULE 08</h3> <input type="text" name="new_name08" class="in_new_name"> <input type="checkbox" name="state08" class="in_state">
+            <h3>MODULE 09</h3> <input type="text" name="new_name09" class="in_new_name"> <input type="checkbox" name="state09" class="in_state">
+            <h3>MODULE 10</h3> <input type="text" name="new_name10" class="in_new_name"> <input type="checkbox" name="state10" class="in_state">
+            <h3>MODULE 11</h3> <input type="text" name="new_name11" class="in_new_name"> <input type="checkbox" name="state11" class="in_state">
+            <h3>MODULE 12</h3> <input type="text" name="new_name12" class="in_new_name"> <input type="checkbox" name="state12" class="in_state">
+            <h3>MODULE 13</h3> <input type="text" name="new_name13" class="in_new_name"> <input type="checkbox" name="state13" class="in_state">
+            <h3>MODULE 14</h3> <input type="text" name="new_name14" class="in_new_name"> <input type="checkbox" name="state14" class="in_state">
+            <h3>MODULE 15</h3> <input type="text" name="new_name15" class="in_new_name"> <input type="checkbox" name="state15" class="in_state">
+            <h3>MODULE 16</h3> <input type="text" name="new_name16" class="in_new_name"> <input type="checkbox" name="state16" class="in_state">
+            <h3>MODULE 17</h3> <input type="text" name="new_name17" class="in_new_name"> <input type="checkbox" name="state17" class="in_state">
+            <h3>MODULE 18</h3> <input type="text" name="new_name18" class="in_new_name"> <input type="checkbox" name="state18" class="in_state">
+            <h3>MODULE 19</h3> <input type="text" name="new_name19" class="in_new_name"> <input type="checkbox" name="state19" class="in_state">
+            <h3>MODULE 20</h3> <input type="text" name="new_name20" class="in_new_name"> <input type="checkbox" name="state20" class="in_state">
+        </div>
+
+        <div class="container_3" id="container_3"> 
+
+            <div class="directory">
+                <div class="title"> <h2>Set Directory</h2> </div>
+                <input type="text" name="directory" id="">
+                <input type="button" value="Set default directory">
+                <h3></h3>
+            </div>
+
+            <div class="show_ip">
+                <h2 class="title">Show IP</h2>
+                <h3></h3>
+                <input type="button" value="Show IP" class="show_ip__in1">
+                <input type="button" value="Hide IP" class="show_ip__in2">
+            </div>
+
+            <div class="emails">
+                <div class="emails_title"> <h2 class="title">Configure E-Mails</h2> </div>
+                <div class="email_list"> emal list </div>
+                <div class="email_config">
+
+                    <h2 class="title">Add Remove E-Mails</h2>
+                    <input type="email" name="" id="new_email">
+                    <input class="button_email_ar" type="button" value="Add">
+                    <input class="button_email_ar" type="button" value="Remove">
+                    <h2 class="title title_sender">Sender</h2>
+                    <input class="input_sender" type="email" name="sender" id="">
+
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="footer" id="footer"> 
+            <input type="submit" value="Send" class="buton_send">
+        </div>
+
+    </div>
+    </form>
+    
+</body>
+</html>

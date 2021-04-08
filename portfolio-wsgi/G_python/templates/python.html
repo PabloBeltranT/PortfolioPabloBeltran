@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'desktop_gui.css' %}">
+    <title>{{text}}</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <h1> Desktop GUI</h1>
+            <h3> Python TKinter</h3>
+        </div>
+
+        <div class="article">
+            <p>
+                Sistemas de monitoreo y prevención de fugas de NH3 Amoniaco, somos una asociación
+                que tenemos como finalidad, garantizar la seguridad industrial enfocada al manejo de NH3, registrar en todo momento la actividad y estado de los sistemas, brindar accesibilidad en todo momento a los sistemas utilizando nuevas tecnologías, y dar, sobre todo, seguridad y calidad implementando equipo certificado para el monitoreo de NH3 Amoniaco.
+               <br><br>
+               Nuestra asociación brinda asesoría personalizada para cada uno de nuestros clientes, adaptamos nuestros productos y servicios a petición y atendiendo las necesidades. Las contrataciones se realizan tomando en cuenta las instalaciones y ambiente donde se implementará, esto para asegurar un correcto funcionamiento y la total cobertura de las necesidades.
+               <br><br>
+               RealTimeViewer es un apartado dedicado exclusivamente al monitoreo en tiempo real de los sensores, en este apartado es la cara principal del programa ya que se mantiene a la escucha siempre en tiempo real de los sensores.
+               <br><br>
+                Este apartado cuenta con una cabecera, donde se incluye información personalizada de la empresa cliente, es decir, avisos, contactos, etc. Posteriormente se visualizan 20 monitores, los cuales al inicio están des habilitados, ya que solo el encargado puede habilitarlos y des habilitarlos con su usuario y contraseña. 
+               <br><br>
+               Una vez se configuran los módulos esta cara notificara el estado de cada una de las áreas donde se encuentra cada sensor, si los niveles PPM se encuentran por debajo de los límites establecidos por el personal, los monitores notificaran de color verde, indicando que la medición de PPM es aceptable, una vez se rebasan los límites establecidos, ya sean la pre-alarma y la alarma el monitor indicara de color rojo indicando el sobrepaso de las PPM y de igual manera indicara en cual área se está produciendo el nivel alto de PPM y la cantidad de las partes por millón.
+               <br><br>
+               Todas estas características de RealTimeViewer no estarán disponibles al iniciar el sistema, sino que se deben configurar con el usuario y contraseña para asegurar la permanencia de los datos al reiniciar el sistema. 
+               <br><br>
+               Configuration, es la pestaña secundaria donde se efectúan todos los cambios, este apartado cuenta con una cabecera, donde de igual manera que en RealTimeViewer es personalizable según los pedimentos de la empresa, en la cabecera, también se encuentra el módulo de inicio de sesión, este módulo se encarga de validar un usuario y una contraseña para permitir al usuario realizar cambios.
+
+            </p>
+
+            <div class="galery">
+                <div class="img1"> <img src="{% static 'assets/imgs/foto1.jpeg' %}" alt="" width="700px"> <h3>Raspberry pi GPIO PCB driver.</h3></div>
+                <div class="img2"> <img src="{% static 'assets/imgs/foto2.jpg' %}" alt="" width="700px">  <h3>LBW-420 Amonian Sesors.</h3> </div>
+                <div class="img4"> <img src="{% static 'assets/imgs/foto4.jpg' %}" alt="" width="700px">  <h3>PCB driver alojada en caja de control.</h3> </div>
+                <div class="img5"> <img src="{% static 'assets/imgs/foto5.jpg' %}" alt="" width="700px">  <h3>Caja de control para Raspberry pi 4b</h3> </div>
+                <div class="img6"> <img src="{% static 'assets/imgs/foto6.jpg' %}" alt="" width="700px">  <h3>Roteo de caja de control de potencia.</h3> </div>
+                <div class="img7"> <img src="{% static 'assets/imgs/foto7.jpg' %}" alt="" width="700px">  <h3>Modulo de control de potencia para compresores industriales.</h3> </div>
+                <div class="img8"> <img src="{% static 'assets/imgs/foto8.png' %}" alt="" width="700px">  <h3>Real Time Viewer TKinter.</h3> </div>
+                <div class="img9"> <img src="{% static 'assets/imgs/foto9.png' %}" alt="" width="700px">  <h3>Configuracion TKinter.</h3> </div>
+                <div class="img3"> <img src="{% static 'assets/imgs/foto3.jpg' %}" alt="" width="700px">  <h3>Python GUI con Tkinter.</h3> </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

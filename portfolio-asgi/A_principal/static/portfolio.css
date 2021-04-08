@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+/* Container */
+.container{
+    margin: 30px 200px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        'header header header header';
+        background-color: rgb(248, 248, 248);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 100px;
+}
+
+/* Project Header */
+.header{
+    grid-area: header;
+    display: grid;
+    gap: 5px;
+    height: 500px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-areas: 
+        'img img img name   name   name   name   name'
+        'img img img infop1 infop2 infop2 skills skills'
+        'img img img cont   cont   cont   cont   cont';
+    background-color: white;
+    box-shadow: 0px 0px 10px -5px #000000;overflow: hidden;
+}
+.img_header{
+    grid-area: img;
+    display: grid;
+    align-items: center;
+}
+.name{
+    grid-area: name;
+    display: grid;
+    align-items: center;
+    font-size: 30px;
+    padding-left: 40px;
+    color: black;
+}
+.personal_info1{
+    grid-area: infop1;
+    padding-left: 40px;
+}
+.personal_info2{
+    grid-area: infop2;
+}
+.personal_skills{
+    grid-area: skills;
+    padding-left: 40px;
+}
+.personal_skills ul{
+    padding-left: 20px;
+}
+.personal_contac{
+    grid-area: cont;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.personal_contac ul a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 75px;
+}
+.personal_contac ul a:hover{
+    font-size: larger;
+}
+
+/* Project Frame Personal */
+.project{
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+        'title title title title'
+        'img   img   img   img';
+    filter: opacity(50%);
+    box-shadow: 0px 0px 10px -5px #000000;
+    text-decoration: none;
+}
+.project:hover{
+    background-color: white;
+    filter: opacity(100%);
+    box-shadow: 0px 0px 10px -5px purple;
+}
+.title_project{
+    grid-area: title;
+    display: grid;
+    padding-top: 10px;
+    justify-items: center;
+    color: rgb(184, 156, 0);
+    text-decoration: none;
+}
+.img_project{
+    grid-area: img;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+}
+.img_project img{
+    width: 200px;
+}
+a{
+    text-decoration: none;
+}
+
+    /* Project Frame Django */
+.django:hover{
+    background-color: white;
+    filter: opacity(100%);
+    box-shadow: 0px 0px 10px -5px #092e20;
+}
+.title_project-django{ color: #092e20; }
+
+
+    /* Project Frame Git */
+
+.git:hover{
+    background-color: #3d2d00;
+    filter: opacity(100%);
+    box-shadow: 0px 0px 10px -5px #f34f29;
+}
+.title_project-git{ color: #f34f29; }
+
+
+    /* Project Frame Docker */
+.docker:hover{
+    background-color: #384d54;
+    filter: opacity(100%);
+    box-shadow: 0px 0px 10px -5px #0db7ed;
+}
+.title_project-docker{ color: #0db7ed; }
+
+
+    /* Project Frame Raspberry */
+.raspberry:hover{
+    background-color: black;
+    filter: opacity(100%);
+    box-shadow: 0px 0px 10px -5px black;
+}
+.title_project-raspberry{ color: #75a927; }
+
+
+    /* Project Frame Python */
+.python:hover{
+    background-color: #646464;
+    filter: opacity(100%);
+    box-shadow: 0px 0px 10px -5px #306998;
+}
+.title_project-python{ color: #FFD43B; }
+
+
+
+@media(max-width: 600px){
+    /* Container */
+    .container{
+        margin: 30px 200px;
+        display: grid;
+        gap: 50px;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'header';
+            background-color: rgb(248, 248, 248);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+
+    /* Project Header */
+    .container{
+        margin: 2px 2px;
+    }
+    .header{
+        grid-area: header;
+        display: grid;
+        gap: 5px;
+        height: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+            'img    img    img'
+            'name   name   name'
+            'infop1 infop2 infop2'
+            'infop1 infop2 infop2'
+            'infop1 infop2 infop2'
+            'infop1 infop2 infop2'
+            'skills skills skills'
+            'cont   cont   cont';
+        background-color: white;
+        box-shadow: 0px 0px 10px -5px #000000;
+    }
+    .img_header{
+        height: 500px;
+        overflow: hidden;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .personal_info1{
+        font-size: 12px;
+    }
+    .personal_info2{
+        font-size: 12px;
+    }
+    .personal_skills{
+        display: grid;
+        height: 200px;
+        font-size: 12px;
+        background-color: rgba(128, 128, 128, 0.397);
+    }
+
+
+
+    /* Project Frame */
+    .project{
+        display: grid;
+        width: 90%;
+        height: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: 
+            'title title title title'
+            'img   img   img   img';
+        background-color: rgba(128, 128, 128, 0.397);
+        filter: opacity(50%);
+        box-shadow: 0px 0px 10px -5px #000000;
+    }
+    .project:hover{
+        background-color: purple;
+        filter: opacity(100%);
+    }
+    .title_project{
+        grid-area: title;
+        display: grid;
+        justify-items: center;
+        color: white;
+    }
+    .img_project{
+        grid-area: img;
+        align-self: center;
+    }
+}
