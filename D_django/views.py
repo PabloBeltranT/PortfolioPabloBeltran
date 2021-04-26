@@ -3,7 +3,7 @@ from .models import Sesion
 
 #
 def django(request):
-    return render(request, 'django.html', {'title':'Django'})
+    return render(request, 'info.html', {'title':'Django'})
 
 
 #
