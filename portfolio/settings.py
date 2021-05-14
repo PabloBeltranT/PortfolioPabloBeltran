@@ -41,13 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'A_principal',
-    'B_personal_info',
-    'C_git',
-    'D_django',
-    'E_docker',
-    'F_raspberry',
-    'G_python',
+    'portfolio_app',
 ]
 
 MIDDLEWARE = [
@@ -67,13 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'A_principal/templates/',
-            'B_personal_info/templates/',
-            'C_git/templates/',
-            'D_django/templates/',
-            'E_docker/templates/',
-            'F_raspberry/templates/',
-            'G_python/templates/',
+            'portfolio_app/templates/portfolio_app/'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
