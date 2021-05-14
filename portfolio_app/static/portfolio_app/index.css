@@ -9,6 +9,15 @@ header{
     justify-items: center;
     width: 70%;
     padding: 20px 17px 0px 17px;
+    text-justify: distribute;
+}
+.container-img{
+    display: grid !important;
+    align-items: center !important;
+    justify-items: center !important;
+}
+.container-img img{
+    display: grid !important;
 }
 .skills{
     display: grid;
@@ -27,6 +36,9 @@ section{
     width: 100%;
     padding-bottom: 20px !important;
 }
+.card-projects img{
+    width: 100% !important;
+}
 .card-projects{
     display: grid !important;
     background-color: white !important;
@@ -38,6 +50,10 @@ section{
     background-color: rgb(0, 0, 0) !important;
     color: white !important;
     border: none !important;
+}
+.link{
+    display: grid !important;
+    align-items: flex-end !important;
 }
 
 @media (max-width: 2000px) {
@@ -66,6 +82,9 @@ section{
 @media (max-width: 1200px) {
     header{
         padding: 20px 0px 0px 0px;
+    }
+    .container-img{
+        align-items: initial !important;
     }
     section{
         width: 70%;
