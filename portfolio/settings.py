@@ -61,7 +61,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'portfolio_app/templates/portfolio_app/'
+            'portfolio_app/templates/portfolio_app/',
+            'portfolio_app/templates/menu/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

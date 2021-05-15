@@ -1,0 +1,51 @@
+html{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    justify-items: center;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    width: 70%;
+    justify-items: center;
+    background-color: #212F3D;
+}
+
+
+
+
+header{
+    display: grid;
+    width: 90%;
+    padding-top: 20px;
+}
+
+
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.link{
+    display: grid;
+    align-items: flex-end;
+}
+
+
+@media (max-width: 2000px) {
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 760px) {
+}
