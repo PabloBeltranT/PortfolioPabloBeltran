@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio_app',
+    'menu_app',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +63,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'portfolio_app/templates/portfolio_app/',
-            'portfolio_app/templates/menu/',
+            'menu_app/templates/menu/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
