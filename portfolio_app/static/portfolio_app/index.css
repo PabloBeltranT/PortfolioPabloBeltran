@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(216, 216, 216) !important;
+    background-color: rgb(0, 0, 0) !important;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -10,6 +10,7 @@ header{
     width: 70%;
     padding: 20px 17px 0px 17px;
     text-justify: distribute;
+    background-color: #000000 !important;
 }
 .container-img{
     display: grid !important;
@@ -60,6 +61,7 @@ section{
 }
 
 @media (max-width: 2000px) {
+    
     header{
         width: 70%;
         padding: 20px 0px 0px 0px;
