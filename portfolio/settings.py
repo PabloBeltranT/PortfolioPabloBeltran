@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'portfolio_app',
     'menu_app',
     'sensor',
+    'apme_2020',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +68,7 @@ TEMPLATES = [
             'menu_app/templates/menu/',
             'sensor/templates/sensor/',
             'portfolio_app/templates/desktop_gui/',
+            'apme_2020/templates/apme_2020/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

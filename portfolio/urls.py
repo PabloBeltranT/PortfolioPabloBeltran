@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('portfolio_app.urls')),
     path('', include('menu_app.urls')),
     path('', include('sensor.urls')),
+    path('', include('apme_2020.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
