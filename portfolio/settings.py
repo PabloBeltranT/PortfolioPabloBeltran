@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio_app',
     'menu_app',
+    'sensor',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +65,7 @@ TEMPLATES = [
         'DIRS': [
             'portfolio_app/templates/portfolio_app/',
             'menu_app/templates/menu/',
+            'sensor/templates/sensor/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
