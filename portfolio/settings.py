@@ -66,6 +66,7 @@ TEMPLATES = [
             'portfolio_app/templates/portfolio_app/',
             'menu_app/templates/menu/',
             'sensor/templates/sensor/',
+            'portfolio_app/templates/desktop_gui/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
