@@ -45,12 +45,13 @@
         <dvi class="container-login">
             <div>
                 <h2>AP Technologies International</h2><br>
-                <form action="">
-                    <input type="text" class="form-control" placeholder="User name" aria-label="First name"><br>
-                    <input type="password" class="form-control" placeholder="Password" aria-label="Last name"><br>
+                <form action="/login/" method="POST"> {% csrf_token %}
+                    <input type="text" class="form-control" placeholder="User name" aria-label="First name" name="user" required><br>
+                    <input type="password" class="form-control" placeholder="Password" aria-label="Last name" name="password" required><br>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Ingresar</button><br><br>
-                    <a href="#" class="link-light p-2">Resgistrarse</a>
-                    <a href="#" class="link-light">Otras Opciones</a>
+                    <a href="/registrar_usuario/" class="link-light p-2">Resgistrarse</a>
+                    <a href="#" class="link-light p-2">Olvide mi sesion</a>
+                    <p> {{ error }} </p>
                 </form>
             </div>
         </dvi>
