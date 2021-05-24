@@ -22,6 +22,7 @@ def registrar_usuario(request):
             password = request.POST['password']
             email = request.POST['email']
             usuario_registrado = Login.objects.get(name=name)
+            return render(request, 'registrar_usuario.html', {'mensaje':'Este usuario ya existe!'})
         except:
             nuevo_usuario = Login(name=name, password=password, email=email)
             nuevo_usuario.save()
