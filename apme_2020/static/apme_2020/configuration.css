@@ -12,6 +12,10 @@ section{
     gap: 20px;
     row-gap: 5%;
 }
+form{
+    display: grid;
+    gap: 2%;
+}
 .card-conf .card-header{
     color: white;
 }
