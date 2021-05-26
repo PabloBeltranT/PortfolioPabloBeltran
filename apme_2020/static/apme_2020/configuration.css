@@ -1,0 +1,50 @@
+
+body{
+    padding: 2% 0%;
+    display: grid;
+    justify-items: center;
+    background-color: rgb(228, 228, 228);
+}
+
+section{
+    display: grid;
+    width: 50%;
+    gap: 20px;
+    row-gap: 5%;
+}
+.card-conf .card-header{
+    color: white;
+}
+.card-conf .table-header{
+    display: grid !important;
+    grid-template-columns: 1fr 8fr 1fr;
+    justify-items: center;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+.card-body .info-input{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 2% 0%;
+    border-top: 2px solid rgb(228, 228, 228);
+}
+.card-body .info-input input[type=text]{
+    width: 80%;
+    border-style: none;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.list-emails{
+    display: grid !important;
+    grid-template-columns: 8fr 2fr;
+    border-bottom: 1px solid rgb(202, 202, 202) !important;
+}
+
+
+@media (max-width: 800px) { 
+    section{
+        width: 95%;
+        gap: 1%;
+    }
+}
