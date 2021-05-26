@@ -14,7 +14,7 @@
 <body>
 
     <section>
-        <form action="">
+        <form action="/configuration/" method="POST">{% csrf_token %}
             <div class="card bg-dark text-white" style="overflow: hidden; border: none !important;">
                 <img src="{% static 'apme_2020/assets/imgs/alcema_3.jpg' %}" class="card-img" alt="..." height="100%">
                 <div class="card-img-overlay">
@@ -35,16 +35,160 @@
                 </div>
                 <div class="card-body">
                     <div class="info-input">
-                        <h6>Modulo #1</h6>
-                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example">
+                        <h6>Modulo #01</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_01">
                         <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
                         </div>
                     </div>
 
                     <div class="info-input">
-                        <h6>Modulo #2</h6>
-                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example">
+                        <h6>Modulo #02</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_02">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #03</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_03">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #04</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_04">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #05</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_05">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #06</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_06">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #07</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_07">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #08</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_08">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #09</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_09">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #10</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_10">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #11</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_11">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #12</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_12">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #13</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_13">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #14</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_14">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #15</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_15">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #16</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_16">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #17</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_17">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #18</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_18">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #19</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_19">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="info-input">
+                        <h6>Modulo #20</h6>
+                        <input class="form-control" type="text" placeholder="Nuevo nombre" aria-label="default input example" name="name_20">
                         <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" maxlength="20">
                         </div>

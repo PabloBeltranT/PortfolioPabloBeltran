@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Login
+from .models import Login, defaultNames
 
 # Create your views here.
 def login(request):
@@ -35,7 +35,17 @@ def registrar_usuario(request):
 
 
 def configuration(request):
+    print('entro a la view!!!')
+    return render(request, 'viewer.html', {})
     if request.method == 'POST':
+        print('entro el post!!!!')
+
+        try:
+            name_01 = request.POST['name_01']
+        except:
+            name_01 = defaultNames.module_01
+        print(name_01)
+        
         return render(request, 'configuration.html')
     else:
         return render(request, 'login.html')
