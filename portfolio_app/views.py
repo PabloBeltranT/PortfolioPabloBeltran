@@ -5,8 +5,7 @@ from .models import Visits
 # Create your views here.
 def index(request):
     last_update = date.today()
-    visit = request.META['USER']
-    new_visit = Visits(from_to=visit)
+    new_visit = Visits(from_to=request)
     new_visit.save()
     visits = Visits.objects.all()
     cant = 0
