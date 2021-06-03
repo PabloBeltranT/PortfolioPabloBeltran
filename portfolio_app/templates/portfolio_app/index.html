@@ -66,6 +66,7 @@
     </header>
 
     <section>
+        <!--
         <div class="card card-projects" style="width: 18rem;">
             <img src="{% static 'portfolio_app/assets/imgs/logo_ap.png' %}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -145,6 +146,25 @@
               <a href="/sensor" class="card-link">Ver Proyecto</a>
             </div>
         </div>
+        -->
+
+
+        {% for project in Projects %}
+          <div class="card card-projects" style="width: 18rem;">
+            <img src="{{ project.img.url }}" class="card-img-top" alt="..." width="100%">
+            <div class="card-body">
+              <h5 class="card-title">{{project.title}}</h5>
+              <p class="card-text">{{project.description}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{project.tags}}</li>
+              <li class="list-group-item">Fecha: {{project.date}}</li>
+            </ul>
+            <div class="link card-body">
+              <a href="{{project.url}}" class="card-link">Ver Proyecto</a>
+            </div>
+        </div>
+        {% endfor %}
     </section>
 
     <footer class="bg-dark container">

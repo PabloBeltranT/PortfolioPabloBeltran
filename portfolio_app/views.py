@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from datetime import date
-from .models import Visits
+from .models import Visits, Projects
 
 # Create your views here.
 def index(request):
@@ -11,7 +11,8 @@ def index(request):
     cant = 0
     for visitant in visits:
         cant = cant + 1
-    return render(request, 'index.html', {'last_update':last_update, 'visits':cant})
+    projects = Projects.objects.all()
+    return render(request, 'index.html', {'last_update':last_update, 'visits':cant, 'Projects':projects})
 
 def desktop_gui(request):
     return render(request, 'desktop_gui.html',{})
