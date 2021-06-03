@@ -150,7 +150,7 @@
 
 
         {% for project in Projects %}
-          <div class="card card-projects" style="width: 18rem;">
+          <div class="card card-projects" style="width: 18rem; display: {{project.status}} !important;">
             <img src="{{ project.img.url }}" class="card-img-top" alt="..." width="100%">
             <div class="card-body">
               <h5 class="card-title">{{project.title}}</h5>
