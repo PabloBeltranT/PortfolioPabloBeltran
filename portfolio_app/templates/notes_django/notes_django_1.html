@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="notes_django_1.css">
+    <title>Document</title>
+</head>
+<body class="p-5">
+
+    <section class="container">
+        <div class="card">
+            <div class="title card-header">
+                <h2>ORM (Object-Relational Maping | Mapeo Relacional de Objetos)</h2>
+                <h4 class="text-muted">01-jun-2021</h4>
+                <h1 class="badge bg-primary">Django</h1>
+                <h1 class="badge bg-primary">Python</h1>
+                <h1 class="badge bg-primary">HTML</h1>
+                <h1 class="badge bg-primary">bootstrap</h1>
+            </div>
+
+            <div class="content card-body">
+                <p>
+                    El ORM en Djnago es un sistema para relacionar modelos o base de datos con objetos de Python, Django crea automaticamente un script al crear una aplicacion, dentro de este script se importa automaticamente un objeto proveniente de <span>Django.db</span> llamado <span>models</span>, para utilizar el ORM de Django se deben instanciar los objetos o tablas a crear directamente del objeto importado. <br>
+                    El objeto a crear corresponde a una tabla dentro de la basa de datos, y cada atributo del objeto correspondiente a una columna de su tabla en su base de datos. el ORM de Django toma este objeto y lo convierte a consultas SQL para poder crear, leer, actualizar, y eliminar datos de una forma orientada a objetos, donde cada tabla cuenta cin atributos y metodos. <br>
+                    Class MyModel(models.Model): <br>
+                    Para comprobar que realmente se creo el cpdigo SQL al aplicar las migraciones podemos filtrar el objeto por atributo ya que de esta manera, una vez almacenamos el objeto en una variable, podemos obtener el atributo 'query' del objeto, dicho atributo contiene las sentencias SQL necesarias, para una vez migramos o creamos la base de datos, las tablas se creen segun los objetos declarados.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>

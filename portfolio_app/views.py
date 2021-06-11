@@ -1,3 +1,4 @@
+
 from django.shortcuts import render
 from datetime import date
 from .models import Visits, Projects
@@ -16,3 +17,6 @@ def index(request):
 
 def desktop_gui(request):
     return render(request, 'desktop_gui.html',{})
+
+def notes(request):
+    return render(request, 'notes_django_1.html', {})

@@ -65,6 +65,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'portfolio_app/templates/portfolio_app/',
+            'portfolio_app/templates/notes_django/',
             'menu_app/templates/menu/',
             'sensor/templates/sensor/',
             'portfolio_app/templates/desktop_gui/',
