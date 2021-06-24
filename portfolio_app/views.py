@@ -1,7 +1,11 @@
 
+from django import views
 from django.shortcuts import render
 from datetime import date
 from .models import Visits, Projects
+
+from django.views import View
+from django.http import JsonResponse
 
 # Create your views here.
 def index(request):
@@ -20,3 +24,11 @@ def desktop_gui(request):
 
 def notes(request):
     return render(request, 'notes_django_1.html', {})
+
+
+
+class PortfolioApi(View):
+    
+    def get(self, request):
+        projects = Projects.objects.all()
+        return JsonResponse(list(projects.values()), safe=False)
