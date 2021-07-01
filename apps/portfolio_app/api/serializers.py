@@ -5,4 +5,11 @@ class projectsSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Projects
-        fields = '__all__'
+        fields = [
+            'title',
+            'description',
+            'tags',
+            'date',
+            'img',
+            'url',
+        ]
