@@ -26,7 +26,7 @@
                         <p class="card-text">
                             Ingeniero Mecatronico egresado de la Universidad Estatal de Sonora, me gusta combinar tecnologías web con electrónica (IOT), realizando aplicaciones web capaces de interactuar con fenómenos físicos, es fascinante ver cómo dichos datos se pueden consultar a través de la web.
                         </p>
-                        <p class="card-text"><small class="text-muted">Last updated {{ last_update }}</small></p>
+                        <!--<p class="card-text"><small class="text-muted">Last updated {{ last_update }}</small></p>-->
                         <div class="skills">
                             <h4>Python + Django</h4>
                             <div class="progress">
@@ -64,7 +64,21 @@
             </div>
         </div>
     </header>
+<!--
+    <nav>
+      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+      
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+      
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+      </div>
+    </nav>
 
+-->
     <section>
         <!--
         <div class="card card-projects" style="width: 18rem;">
@@ -157,7 +171,9 @@
               <p class="card-text">{{project.description}}</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">{{project.tags}}</li>
+            {% if project.tags %}
+              <!--<li class="list-group-item">{{project.tags}}</li>-->
+            {% endif %}
               <li class="list-group-item">Fecha: {{project.date}}</li>
             </ul>
             <div class="link card-body">
@@ -190,7 +206,7 @@
       </duv>
       <duv class="row p-1">
         <div class="col-10 text-light">
-          <h5> {{ visits }}  Visits</h5>
+          <!--<h5> {{ visits }}  Visits</h5>-->
         </div>
       </duv>
     </footer>

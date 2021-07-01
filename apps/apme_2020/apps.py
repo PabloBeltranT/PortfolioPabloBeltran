@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PortfolioAppConfig(AppConfig):
+class Apme2020Config(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'menu_app'
+    name = 'apps.apme_2020'

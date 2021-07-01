@@ -1,4 +1,4 @@
-from sensor.models import Datos_de_consumo
+from .models import Datos_de_consumo
 from channels.generic.websocket import AsyncWebsocketConsumer
 import json
 from asyncio import sleep

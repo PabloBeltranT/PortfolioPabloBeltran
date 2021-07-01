@@ -34,18 +34,27 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
-INSTALLED_APPS = [
+BASE_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'portfolio_app',
-    'menu_app',
-    'sensor',
-    'apme_2020',
 ]
+
+THIRD_APPS = [
+    'rest_framework'
+]
+
+LOCAL_APPS = [
+    'apps.portfolio_app',
+    'apps.menu_app',
+    'apps.sensor',
+    'apps.apme_2020',
+]
+
+INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -64,12 +73,12 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'portfolio_app/templates/portfolio_app/',
-            'portfolio_app/templates/notes_django/',
-            'menu_app/templates/menu/',
-            'sensor/templates/sensor/',
-            'portfolio_app/templates/desktop_gui/',
-            'apme_2020/templates/apme_2020/',
+            'apps/portfolio_app/templates/portfolio_app/',
+            'apps/portfolio_app/templates/notes_django/',
+            'apps/menu_app/templates/menu/',
+            'apps/sensor/templates/sensor/',
+            'apps/portfolio_app/templates/desktop_gui/',
+            'apps/apme_2020/templates/apme_2020/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -1,5 +1,5 @@
 from random import randint, randrange
-from sensor.models import Datos_de_consumo
+from apps.sensor.models import Datos_de_consumo
 import serial
 from time import sleep
 

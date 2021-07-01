@@ -18,8 +18,8 @@ class Status(models.Model):
 class Projects(models.Model):
     img = models.ImageField(upload_to='projects')
     title = models.CharField(max_length=50)
-    description = models.CharField(max_length=500)
-    tags = models.ForeignKey(Tags, on_delete=models.CASCADE)
+    description = models.CharField(max_length=1000)
+    tags = models.CharField(max_length=30)
     date = models.DateField()
     url = models.CharField(max_length=20)
     status = models.ForeignKey(Status, on_delete=models.CASCADE)

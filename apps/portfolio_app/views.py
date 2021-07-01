@@ -24,11 +24,3 @@ def desktop_gui(request):
 
 def notes(request):
     return render(request, 'notes_django_1.html', {})
-
-
-
-class PortfolioApi(View):
-    
-    def get(self, request):
-        projects = Projects.objects.all()
-        return JsonResponse(list(projects.values()), safe=False)

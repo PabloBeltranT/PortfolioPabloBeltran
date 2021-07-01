@@ -28,7 +28,14 @@ header{
 }
 
 
-
+nav{
+    display: grid;
+    width: 100%;
+    padding-bottom: 20px !important;
+    overflow: hidden;
+    padding: 0px 2px;
+    justify-items: center;
+}
 
 
 section{
@@ -68,6 +75,9 @@ section{
         width: 70%;
         padding: 20px 0px 0px 0px;
     }
+    nav{
+        width: 70%;
+    }
     section{
         width: 70%;
         grid-template-columns: repeat(4, 1fr);
@@ -78,6 +88,9 @@ section{
 @media (max-width: 1600px) {
     header{
         padding: 20px 0px 0px 0px;
+    }
+    nav{
+        width: 70%;
     }
     section{
         width: 70%;
