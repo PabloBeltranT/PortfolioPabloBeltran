@@ -16,13 +16,13 @@ class Status(models.Model):
         return self.status
 
 class Projects(models.Model):
-    img = models.ImageField(upload_to='projects')
+    img = models.ImageField(upload_to='projects', null=True)
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=1000)
     tags = models.CharField(max_length=30)
-    date = models.DateField()
+    date = models.DateField(null=True)
     url = models.CharField(max_length=20)
-    status = models.ForeignKey(Status, on_delete=models.CASCADE)
+    status = models.ForeignKey(Status, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.title

@@ -18,12 +18,21 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-urlpatterns = [
+urls_portfolio = [
     path('admin/', admin.site.urls),
     path('', include('apps.portfolio_app.urls')),
     path('', include('apps.menu_app.urls')),
     path('', include('apps.sensor.urls')),
     path('', include('apps.apme_2020.urls')),
 ]
+
+
+urls_api = [
+    path('portfolio/', include('api.routers')),
+]
+
+urlpatterns = urls_api + urls_portfolio
+
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
